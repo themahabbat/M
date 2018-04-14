@@ -1,12 +1,6 @@
 <?php
 use Views\Compiler;
 
-function give($key){
-	return $GLOBALS['config'];
-}
-
-give('x');
-
 function url($url){
 	$basepath = implode('/',
 		array_slice(

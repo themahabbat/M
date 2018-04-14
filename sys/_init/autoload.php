@@ -1,8 +1,5 @@
 <?php
 
-require_once 'Config.php';
-require_once 'Helpers.php';
-
 // Directories with Classes
 $directories = [
     'Routing',
@@ -12,7 +9,7 @@ $directories = [
 
 // Load each Class in Directories
 foreach($directories as $directory){
-    foreach ( glob( ROOT. "/app/$directory/*.php" ) as $class)
+    foreach ( glob( SYS. "/$directory/*.php" ) as $class)
     {
         require_once $class;
     }
